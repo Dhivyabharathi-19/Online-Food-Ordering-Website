@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Food Ordering App — Popular Restaurants</title>
+    <link rel="stylesheet" href="Style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-inner">
+        <h1>Food Ordering App</h1>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="popular-section">
+        <h2>Popular Restaurants</h2>
+        <div class="popular-grid" id="popularGrid">
+          <div
+            class="pop-card"
+            data-name="Barbeque Nation"
+            onclick="openMenu('Barbeque Nation')"
+          >
+            <img
+              src="https://businessparkcenter.com/wp-content/uploads/2024/09/Barbeque-Nation.webp"
+              alt="Barbeque Nation"
+            />
+            <div class="pop-info">
+              <div class="pop-title">Barbeque Nation</div>
+              <div class="pop-meta">
+                <div class="rating">4.5 <span class="stars"></span></div>
+                <div class="time">30-40 min</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="pop-card"
+            data-name="Nalas Aappakadai"
+            onclick="openMenu('Nalas Aappakadai')"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsjKXGQH-FyZU7HHOHqXRA-6mkgDKvWRnFjg&s"
+              alt="Nalas Aappakadai"
+            />
+            <div class="pop-info">
+              <div class="pop-title">Nalas Aappakadai</div>
+              <div class="pop-meta">
+                <div class="rating">4.3 <span class="stars"></span></div>
+                <div class="time">25-35 min</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pop-card" data-name="A2B" onclick="openMenu('A2B')">
+            <img
+              src="https://www.a2bnewjersey.com/wp-content/uploads/2022/08/A2B-Logo-PDF-1.png"
+              alt="A2B"
+            />
+            <div class="pop-info">
+              <div class="pop-title">A2B</div>
+              <div class="pop-meta">
+                <div class="rating">4.4 <span class="stars"></span></div>
+                <div class="time">20-30 min</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="pop-card"
+            data-name="Kovai Annapoorna"
+            onclick="openMenu('Kovai Annapoorna')"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTADGU8i_A9n6upK9MUufR_WjqerfdWg7k7Yg&s"
+              alt="Kovai Annapoorna"
+              style="width: 60%; height: 50%; display: block; margin: 10px auto"
+            />
+            <div class="pop-info">
+              <div class="pop-title">Kovai Annapoorna</div>
+              <div class="pop-meta">
+                <div class="rating">4.2 <span class="stars"></span></div>
+                <div class="time">20-30 min</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="pop-card"
+            data-name="Arabian Grill"
+            onclick="openMenu('Arabian Grill')"
+          >
+            <img
+              src="https://arabiangrill.in/assets/img/logo/logo.png"
+              alt="Arabian Grill"
+            />
+            <div class="pop-info">
+              <div class="pop-title">Arabian Grill</div>
+              <div class="pop-meta">
+                <div class="rating">4.6 <span class="stars"></span></div>
+                <div class="time">30-40 min</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="pop-card"
+            data-name="Chinese Wok"
+            onclick="openMenu('Chinese Wok')"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIRSOOBarmoa5mnbZ3z1tTYJI7hYN98oojsg&s"
+              alt="Chinese Wok"
+              style="width: 60%; height: 50%; display: block; margin: 10px auto"
+            />
+
+            <div class="pop-info">
+              <div class="pop-title">Chinese Wok</div>
+              <div class="pop-meta">
+                <div class="rating">4.1 <span class="stars"></span></div>
+                <div class="time">25-35 min</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="pop-card"
+            data-name="Paradise Biryani"
+            onclick="openMenu('Paradise Biryani')"
+          >
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRDCm0EkCUthWY6ORu-kqogJ0WCfvqnlm3GA&s"
+              alt="Paradise Biryani"
+              style="width: 50%; height: 80%; display: block; margin: 10px auto"
+            />
+            <div class="pop-info">
+              <div class="pop-title">Paradise Biryani</div>
+              <div class="pop-meta">
+                <div class="rating">4.7 <span class="stars"></span></div>
+                <div class="time">35-45 min</div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="pop-card"
+            data-name="Cafe Coffee Day"
+            onclick="openMenu('Cafe Coffee Day')"
+          >
+            <img
+              src="https://businessparkcenter.com/wp-content/uploads/2024/09/Cafe-Coffee-Day.webp"
+              alt="Cafe Coffee Day"
+            />
+            <div class="pop-info">
+              <div class="pop-title">Cafe Coffee Day</div>
+              <div class="pop-meta">
+                <div class="rating">4.0 <span class="stars"></span></div>
+                <div class="time">15-25 min</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="list-section">
+        <div class="restaurant-list" id="restaurantList"></div>
+      </section>
+
+      <section id="menuPage" class="menu-page">
+        <div class="menu-inner">
+          <h2 id="menuTitle">Menu</h2>
+          <div id="menuList" class="menu-list"></div>
+          <br />
+          <button class="back-btn" onclick="closeMenu()">Back</button>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
