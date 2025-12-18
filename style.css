@@ -1,0 +1,215 @@
+:root {
+  --bg: #f2f2f2;
+  --dark: #1f1f1f;
+  --white: #ffffff;
+  --muted: #555555;
+  --card: #f9f9f9;
+  --accent: #e63939;
+  --accent-2: #ff4747;
+  --border: #cccccc;
+  --black: #111111;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body {
+  background: var(--bg);
+  color: var(--black);
+  line-height: 1.4;
+}
+
+header {
+  background: var(--dark);
+  color: var(--white);
+  padding: 18px 12px;
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+header h1 {
+  font-size: 20px;
+  margin-right: auto;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 12px 80px 12px;
+} /* bottom padding so cart doesn't overlap */
+
+/* Popular section */
+.popular-section h2 {
+  margin: 8px 0 12px;
+  color: var(--dark);
+}
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 18px;
+}
+
+.pop-card {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  display: flex;
+  flex-direction: column;
+}
+.pop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+}
+
+.pop-info {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.pop-title {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--black);
+}
+.pop-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: #fff7d1;
+  padding: 6px 8px;
+  border-radius: 8px;
+  border: 1px solid #ffe08a;
+  font-weight: 600;
+  font-size: 14px;
+}
+.rating svg {
+  width: 14px;
+  height: 14px;
+  vertical-align: middle;
+}
+
+.list-section {
+  margin-top: 28px;
+}
+.list-section h2 {
+  margin-bottom: 12px;
+}
+.restaurant-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.restaurant-card {
+  background: var(--white);
+  border-radius: 10px;
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+.restaurant-card img {
+  width: 120px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.restaurant-body {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.restaurant-body h3 {
+  margin: 0;
+  font-size: 16px;
+}
+.restaurant-body p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.menu-page {
+  display: none;
+  padding: 12px 0;
+}
+.menu-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.back-btn {
+  background: #333333;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+}
+
+.menu-card {
+  width: 100%;
+  background: var(--white);
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+.menu-card img {
+  width: 120px;
+  height: 85px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.menu-card .meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.menu-card .meta h4 {
+  margin: 0;
+}
+.menu-card .meta p {
+  margin: 0;
+  color: var(--muted);
+}
+.menu-card button {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: none;
+  background: var(--accent);
+  color: var(--white);
+  cursor: pointer;
+}
